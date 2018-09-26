@@ -8,7 +8,10 @@ configparser==3.5.0
 Django==1.10
 docopt==0.4.0
 enum34==1.1.6
+<<<<<<< HEAD
 env==0.1.0
+=======
+>>>>>>> 360d8ec991c84a4cd2a9cc92f9e3eb6d25c719a3
 futures==3.2.0
 idna==2.7
 isort==4.3.4
