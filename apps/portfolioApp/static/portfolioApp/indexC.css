@@ -58,14 +58,23 @@ nav p {
 .one {
     width: 100%;
     height: 800px;
-    background-image:url('Images/ProfilePic.jpg');
+    background-image:url('images/ProfilePic.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+    .onePic {
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        position: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
     .oneInfo {
-        width: 800px;
+        width: auto;
         height: 500px;
         padding: 150px 5px 5px 5px;
         margin-left: 50%;
@@ -150,12 +159,11 @@ nav p {
         margin-top: 0px;   
     }
     .two h2 {
-        /* padding-top: -50px; */
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         font-size: 30px;
-        padding-top: 125px;
+        padding-top: 50px;
         margin-top: 0px;
     }
     .twoPContainer {
@@ -165,6 +173,16 @@ nav p {
         font-weight: lighter;
         text-align: center;
         color: white;
+    }
+    @media screen and (max-width: 992px) {
+        .twoPContainer {
+            width: auto;
+            height: auto;
+            margin: auto;
+            font-weight: lighter;
+            text-align: center;
+            color: white;
+        }
     }
 
     #skillsTag {
@@ -194,6 +212,30 @@ nav p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media screen and (max-width: 992px) {
+    .three {
+        width: auto;
+        height: 1200px;
+        padding-top: 70px;
+        background: lightgray;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 700px) {
+    .three {
+        width: auto;
+        height: 1800px;
+        padding-top: 70px;
+        background: lightgray;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 .threeWrapperShadow {
     width: 100%;
@@ -225,13 +267,29 @@ nav p {
         margin: auto;
         width: 1050px;
     }
+    @media screen and (max-width: 992px) {
+        .techContainerOne {
+            width: auto;
+            margin: auto;
+            height: auto;
+            display: inline-block;
+        }
+    }
     .techContainerTwo {
         margin: auto;
         width: 1050px;
     }
+    @media screen and (max-width: 992px) {
+        .techContainerTwo {
+            width: auto;
+            margin: auto;
+            height: auto;
+            display: inline-block;
+        }
+    }
         .techHeaderSquare {
             background: black;
-            width:200px;
+            width:auto;
             height: 50px;
             margin: auto;
             border-bottom-left-radius: 20px;
@@ -253,6 +311,15 @@ nav p {
             border-bottom-right-radius: 10px; 
             border-top-left-radius: 10px;
             border-top-right-radius: 10px; 
+        }
+        @media screen and (max-width: 600px) {
+            .languages {
+                display: inline-block;
+                background: black;
+                width: 100%;
+                margin: 0px 0px 10px 0px;
+                padding: 0px;
+            }
         }
         .languages p {
             font-family: Arial, Helvetica, sans-serif;
@@ -284,6 +351,15 @@ nav p {
             border-bottom-right-radius: 10px; 
             border-top-left-radius: 10px;
             border-top-right-radius: 10px; 
+        }
+        @media screen and (max-width: 600px) {
+            .frameworks {
+                display: inline-block;
+                background: black;
+                width: 100%;
+                margin: 0px 0px 10px 0px;
+                padding: 0px;
+            }
         }
         .frameworks p {
             font-family: Arial, Helvetica, sans-serif;
@@ -333,37 +409,71 @@ nav p {
 
 
 .four {
-    padding-top: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     width: 100%;
+    height: 400px;
     background-color: black;
 }
+@media screen and (max-width: 992px) {
+    .four {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: auto;
+        height: auto;
+        display: inline-block;
+    }
+}
     .recentWorksContainer {
-        padding-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         width: 940px;
-        height: 400px;
+        height: auto;
         margin: auto;
         position: relative;
+    }
+    @media screen and (max-width: 992px) {
+        .recentWorksContainer {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            position: relative;
+            display: inline-block;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .recentWorksContainer {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            position: relative;
+            display: inline-block;
+        }
     }
 
     .worksWrapper {
         position: relative;
-        width: 300px;
-        height: 230px;
+        width: auto;
+        height: auto;
         padding: 5px;
+        color: white;
         display: inline-block;
-    }
-    .worksWrapperShadowContainer {
-        width: 300px;
-        height: 10px;
         margin: auto;
     }
-    .worksWrapperShadow {
-        width: 97%;
-        height: 10px;
-        margin:auto;
-        background-image: linear-gradient(rgba(99, 98, 98, 0.2), black);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+    @media screen and (max-width: 1000px) {
+        .worksWrapper {
+            position: relative;
+            width: auto;
+            height: auto;
+            padding: 50px;
+            color: white;
+            display: inline-block;
+            margin: auto;
+        }
     }
         .works {
             width: 300px;
@@ -376,9 +486,9 @@ nav p {
             border-top-right-radius: 5px;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
-            margin-bottom: -5px;
+            /* margin-bottom: -5px; */
+            margin: auto;
             display: inline-block;
-            box-shadow: 0px 4px 7px #777;
         }
             .worksProject {
                 transition: .5s ease;
@@ -423,6 +533,8 @@ nav p {
         .seeMoreContainer {
             width: 100%;
             height: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
             .seeMoreButton {
                 height: 48px;
